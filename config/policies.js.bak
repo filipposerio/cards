@@ -33,7 +33,9 @@ module.exports.policies = {
   },
   'UserAlbumsController': {
     '*': true // We dont need authorization here, allowing public access
+  },
+  'AlbumsController': {
+    '*': true // We dont need authorization here, allowing public access
   }
-
 
 };
