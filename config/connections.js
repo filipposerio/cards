@@ -24,4 +24,5 @@ module.exports.connections = {
     adapter: 'sails-mongo',
     url: process.env.MONGOLAB_URI_ORDINI
   }
+  
 };
