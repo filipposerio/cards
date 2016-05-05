@@ -10,10 +10,13 @@ module.exports = {
 
   schema: true,
   attributes: {
-    	email: {
+   	email: {
       type: 'email',
       required: 'true',
       unique: true 
+    },
+   	admin: {
+      type: 'string', size: 1
     },
   	password: {
       type: 'string',

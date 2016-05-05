@@ -21,15 +21,15 @@ module.exports.policies = {
 
   '*': ['isAuthorized'], // Everything resctricted here
   'UsersController': {
-    'create': true // We dont need authorization here, allowing public access
-    //'*': true
+    //'create': true // We dont need authorization here, allowing public access
+    '*': true
   },
 
   'AuthController': {
-    '*': true // We dont need authorization here, allowing public access
+    '*': true
   },
   'MissingCardsController': {
-    '*': true // We dont need authorization here, allowing public access
+    '*': true 
   },
   'UserAlbumsController': {
     '*': true // We dont need authorization here, allowing public access

@@ -8,20 +8,12 @@
 module.exports = {
 	schema: true,
   attributes: {
-  	name: {
-      type: 'string',
-      required: 'true',
-      unique: true // Yes unique one
+    userown: {
+        model:'users', required : true 
     },
-  	descr: {
-      type: 'string',
-      required: 'true'      
-    },
-  	year: {
-      type: 'integer',
-      required: 'true'      
-    },
-      toJSON: function () {
+    name : { type: 'string', required : true },
+    content: { type: 'string', required : true },
+    toJSON: function () {
       var obj = this.toObject();
       return obj;
     }

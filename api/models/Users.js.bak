@@ -10,10 +10,10 @@ module.exports = {
 
   schema: true,
   attributes: {
-  	email: {
+    	email: {
       type: 'email',
       required: 'true',
-      unique: true // Yes unique one
+      unique: true 
     },
   	password: {
       type: 'string',

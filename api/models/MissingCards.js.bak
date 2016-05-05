@@ -9,17 +9,18 @@ module.exports = {
 
   schema: true,
   attributes: {
-  	idUser: {
-      type: 'string',
-      required: 'true'
-    },
-  	idAlbum: {
-      type: 'string',
-      required: 'true'
+    albumcard: {
+        model:'albums', required:true
     },
     card: {
       type: 'string',
       required: 'true'
+    },
+    textdescriprion: {
+      type: 'string'
+    },    
+    foundby: { 
+    		model: 'users'
     },
       toJSON: function () {
       var obj = this.toObject();
