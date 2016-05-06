@@ -24,7 +24,7 @@ module.exports.policies = {
     'create': true // We dont need authorization here, allowing public access
     //'*': true
   },
-
+/*
   'AuthController': {
     '*': true
   },
@@ -37,5 +37,5 @@ module.exports.policies = {
   'AlbumsController': {
     '*': true // We dont need authorization here, allowing public access
   }
-
+*/
 };
